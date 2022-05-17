@@ -38,3 +38,23 @@ function findGreater(a,b) {
 function checkEqual(a,b) {
     return a === b ? "Equal" : "Not Equal";
 }
+
+/** Use Multiple Conditional (Ternary) Operators  
+ *  
+*/
+
+function findGreaterorEqual2(a,b) {
+    if (a === b) {
+        return "a and b are equal";
+    } else if (a > b) {
+        return "a is greater than b";
+    }else{
+        return "b is greater";
+    }
+}
+
+function findGreaterorEqual2(a ,b) {
+    return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater than b" 
+    : "b is greater"
+}
