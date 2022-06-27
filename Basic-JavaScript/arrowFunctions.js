@@ -41,7 +41,7 @@ function howMany(...args) {
     return "You have passed " + args.length + "arguments";
 }
 console.log(howMany(1,2,3))
-console.log(howMany("string",null,[a,b,c],{}))
+console.log(howMany("string",null,["a",1,{}],{}))
 
 
 /** You have passed 3 arguments. and You have passed 4 arguments.. */
@@ -50,3 +50,24 @@ console.log(howMany("string",null,[a,b,c],{}))
  * a way that the function sum is able to take any number of arguments and return their sum. */
 
 const sum = (...args) => args.reduce((a, b) => a + b, 0)
+
+
+/**  Anonymous function */
+
+var magic1 = function () {
+    return new Date();
+};
+
+// the function above can be converted to this below
+
+const magic1arrowfunction  = () => new Date();
+
+/** To concatenate 2 arrays using arrow functions */
+
+var myConcatenate = function (arr1, arr2) {
+    return arr1.concat(arr2);
+}
+
+var myConcatenatearrowfunction = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1,2], [3,4,5]))
